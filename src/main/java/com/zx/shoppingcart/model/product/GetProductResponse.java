@@ -13,7 +13,6 @@ public class GetProductResponse {
 
     /**
      * get方法会被spring框架调用，必须写
-     * @param product
      */
     public Product getProduct() {
         return product;

@@ -40,7 +40,7 @@ public class ProductDao {
         ArrayList<Product> products = new ArrayList<>();
 
             //构造查询语句
-            String query = "SELECT * FROM 'product'";
+            String query = "SELECT * FROM product";
             ResultSet rs = statement.executeQuery(query);
 
             //根据查询结果构造Product对象
