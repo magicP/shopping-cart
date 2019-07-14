@@ -13,7 +13,7 @@ public class Order {
     private long id;
 
     @OneToOne
-    @JoinColumn(name = "user-id")
+    @JoinColumn(name = "user_id")
     private User user;
 
     @OneToOne

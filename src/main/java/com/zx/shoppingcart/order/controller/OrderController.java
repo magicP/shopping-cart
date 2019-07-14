@@ -10,8 +10,6 @@ import com.zx.shoppingcart.user.UserDao;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import javax.net.ssl.HttpsURLConnection;
 import java.util.List;
 
 @RestController
