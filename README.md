@@ -1,4 +1,4 @@
 # shoppingcart
 a practice project
 
-手打的
+练习代码
