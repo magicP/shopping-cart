@@ -2,10 +2,10 @@ package com.zx.shoppingcart.order.view;
 
 import com.zx.shoppingcart.order.model.Order;
 
-public class CreateOrderResponse {
+public class GetOrderResponse {
     private Order order;
 
-    public CreateOrderResponse(Order order) {
+    public GetOrderResponse(Order order) {
         this.order = order;
     }
 
