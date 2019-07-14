@@ -1,8 +1,17 @@
 package com.zx.shoppingcart.user;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.zx.shoppingcart.cart.model.CartItem;
 
-import javax.persistence.*;
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
 import java.util.List;
 
 @Entity
@@ -21,6 +30,7 @@ public class User {
     @OneToMany(cascade = CascadeType.ALL,
             fetch = FetchType.EAGER,
             mappedBy = "user")
+    @JsonIgnore
     private List<CartItem> cartItems;
 
     public User(){
