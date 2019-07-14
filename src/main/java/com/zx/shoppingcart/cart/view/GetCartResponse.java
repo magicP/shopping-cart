@@ -3,16 +3,12 @@ package com.zx.shoppingcart.cart.view;
 import com.zx.shoppingcart.cart.model.CartItem;
 
 public class GetCartResponse {
-    private CartItem item;
-    public GetCartResponse(CartItem item) {
-        this.item = item;
+    private CartItem cartItem;
+    public GetCartResponse(CartItem cartItem) {
+        this.cartItem = cartItem;
     }
 
-    public void setItem(CartItem item) {
-        this.item = item;
-    }
-
-    public CartItem getItem() {
-        return item;
+    public CartItem getCartItem() {
+        return cartItem;
     }
 }

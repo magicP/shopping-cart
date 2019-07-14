@@ -5,6 +5,7 @@
 .DS_Store
 
 # Maven
+resources/error.txt
 target/
 pom.xml.tag
 pom.xml.releaseBackup
