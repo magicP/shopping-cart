@@ -6,7 +6,7 @@ import com.zx.shoppingcart.user.User;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "order")
+@Table(name = "customer_order")
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

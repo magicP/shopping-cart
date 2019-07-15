@@ -36,7 +36,7 @@ public class OrderController {
     /**
      * get order by id
      */
-    @GetMapping("orders/orderId")
+    @GetMapping("orders/{orderId}")
     public ResponseEntity<GetOrderResponse> getOrder(@PathVariable long orderId){
         Order order = orderDao.getById(orderId);
         if(order == null){

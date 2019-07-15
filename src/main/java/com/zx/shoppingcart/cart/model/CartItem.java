@@ -31,6 +31,10 @@ public class CartItem {
         this.quantity = quantity;
     }
 
+    public long getId() {
+        return id;
+    }
+
     public User getUser() {
         return user;
     }

@@ -18,7 +18,7 @@ CREATE TABLE `product` (
     description VARCHAR(255)    NOT NULL
 );
 
-CREATE TABLE `order` (
+CREATE TABLE `customer_order` (
     id          INTEGER         PRIMARY KEY NOT NULL,
     user_id     INTEGER         NOT NULL,
     product_id  INTEGER         NOT NULL,
