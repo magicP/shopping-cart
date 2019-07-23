@@ -1,7 +1,7 @@
 package com.zx.shoppingcart.order.model;
 
 import com.zx.shoppingcart.product.model.Product;
-import com.zx.shoppingcart.user.User;
+import com.zx.shoppingcart.user.model.User;
 
 import javax.persistence.*;
 

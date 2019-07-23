@@ -1,4 +1,4 @@
-package com.zx.shoppingcart.user;
+package com.zx.shoppingcart.user.model;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
@@ -11,4 +11,5 @@ public interface UserDao extends CrudRepository<User,Long> {
     User save(User user);
     List<User> findAll();
     void delete(User user);
+    User getByName(String name);
 }

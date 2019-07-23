@@ -1,4 +1,4 @@
-package com.zx.shoppingcart.user;
+package com.zx.shoppingcart.user.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.zx.shoppingcart.cart.model.CartItem;
@@ -21,9 +21,11 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(name = "name")
+    //这里要设成unique
+    @Column(name = "name",unique = true)
     private String name;
 
+    @JsonIgnore
     @Column(name = "password")
     private String password;
 
@@ -37,10 +39,9 @@ public class User {
 
     }
 
-    public User( String name, String password, List<CartItem> cartItems) {
+    public User( String name, String password) {
         this.name = name;
         this.password = password;
-        this.cartItems = cartItems;
     }
 
     public long getId() {
@@ -57,6 +58,10 @@ public class User {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getPassword() {
+        return password;
     }
 
     public void setPassword(String password) {
